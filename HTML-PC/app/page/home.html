@@ -194,4 +194,24 @@
 
 <!-- /build:content -->
 <!-- build:script2 -->
+<script>
+        // Chặn phím F12 và các phím tắt khác
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F12' || (event.ctrlKey && (event.key === 'u' || event.key === 's' || event.key === 'a' || event.key === 'f'))) {
+                event.preventDefault();
+            }
+        });
+
+        // Chặn chuột phải
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Chặn phím tắt chuột phải
+        document.addEventListener('mousedown', function(event) {
+            if (event.button === 2) {
+                event.preventDefault();
+            }
+        });
+</script>
 <!-- /build:script2 -->
