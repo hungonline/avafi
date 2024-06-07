@@ -706,98 +706,71 @@
                 }
             }
         }
+        @media (max-width: 767px) {
+            height: 100%;
+            max-width: 100%;
+            .user1{
+                top: -50px;
+                bottom: inherit;
+                left: -10px;
+            }
+            .user2{
+                right: -10px;
+                bottom: 50px;
+                img{
+                    max-width: 100px;
+                }
+            }
+            .step{
+                align-items: center;
+                position: relative;
+                bottom: inherit;
+                left: inherit;
+                flex-wrap: nowrap;
+                padding-bottom: 50px;
+                top: inherit;
+                left: inherit;
+                right: inherit;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    border-left: 1px dashed #CFCFCF;
+                    bottom: -20px;
+                    height: 100%;
+                    left: 50px;
+                    background: none;
+                    width: 1px;
+                    top: inherit;
+                    transform: rotate(0deg);
+                }
+                .Earth{
+                    position: relative;
+                    z-index: 1;
+                    width: 100px;
+                    -webkit-flex-shrink: 0;
+                    -ms-flex-negative: 0;
+                    flex-shrink: 0;
+                    margin-right: 10px;
+                    order: 1;
+                }
+                .des{
+                    width: 100%;
+                    position: relative;
+                    z-index: 1;
+                    font-size: 16px;
+                    text-align: left;
+                    order: 2;
+                }
+                &.step5{padding-bottom: 0;}
+            }
+        }
     }
     
-    .roadmap-mobile{
-        display: none;
-        position: relative;
-        .user1{
-            position: absolute;
-            top: -60px;
-            img{
-                max-width: 80px;
-            }
-        }
-        .user2{
-            img{
-                max-width: 150px;
-            }
-        }
-        .list{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .step{
-            width: 100%;
-            padding-bottom: 50px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            .Earth{
-                position: relative;
-                z-index: 1;
-                width: 100px;
-                flex-shrink: 0;
-                margin-right: 10px;
-            }
-            .des{
-                width: 100%;
-                position: relative;
-                z-index: 1;
-                font-size: 16px;
-                p{
-                    margin-bottom: 0;
-                }
-                ul{
-                    margin-bottom: 0;
-                    display: inline-block;
-                    li{
-                        span{
-                            position: relative;
-                            padding-left: 10px;
-                            &::before{
-                                content: "";
-                                background: #CFCFCF;
-                                position: absolute;
-                                width: 5px;
-                                height: 5px;
-                                border-radius: 50%;
-                                left: 0;
-                                top: 9px;
-                            }
-                        }
-                    }
-                }
-            }
-            &::before{
-                content: "";
-                position: absolute;
-                border-left: 1px dashed #CFCFCF;
-                bottom: -30px;
-                height: 80%;
-                left: 50px;
-            }
-        }
-
-        .step5{
-            padding-bottom: 0;
-            &::before{display: none;}
-        }
-
-    }
     @media (max-width: 1280px) {
         padding-bottom: 80px;
     }
     @media (max-width: 991px) {
         padding-bottom: 60px;
-    }
-    @media (max-width: 767px) {
-        .roadmap-pc{
-            display: none;
-        }
-        .roadmap-mobile{
-            display: block;
-        }
     }
 }
 
