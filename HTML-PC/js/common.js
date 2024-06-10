@@ -54,9 +54,8 @@
             // $('body').css('overflow', $(this).hasClass('open') ? 'visible' : '')
         });
         $('.main-menu .nav>li>a').click(function () {
-            $('.overlay-bg').toggleClass('open');
-            $('#vibeji-ham,.main-menu').toggleClass('open');
-            // $('body').css('overflow', $(this).hasClass('open') ? 'visible' : '')
+            $('.overlay-bg').removeClass('open');
+            $('#vibeji-ham,.main-menu').removeClass('open');
         });
     }
     //Hover
