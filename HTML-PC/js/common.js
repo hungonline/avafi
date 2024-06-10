@@ -41,27 +41,69 @@
     }
     //onCLick
     function onCLick() {
-        
         $('#vibeji-ham').off('click').on('click', function () {
             $(this).toggleClass('open');
             $('.main-menu').toggleClass('open');
             $('.overlay-bg').toggleClass('open');
-            $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
+            // $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
         });
         
         $('.overlay-bg').off('click').on('click', function() {
             $(this).toggleClass('open');
             $('#vibeji-ham,.main-menu').toggleClass('open');
-            $('body').css('overflow', $(this).hasClass('open') ? 'visible' : '')
+            // $('body').css('overflow', $(this).hasClass('open') ? 'visible' : '')
+        });
+        $('.main-menu .nav>li>a').click(function () {
+            $('.overlay-bg').toggleClass('open');
+            $('#vibeji-ham,.main-menu').toggleClass('open');
+            // $('body').css('overflow', $(this).hasClass('open') ? 'visible' : '')
         });
     }
     //Hover
 
+    //only scroll
+    function onlyscroll() {
+        var lastId,
+        topMenu = $(".main-menu"),
+        topMenuHeight = topMenu.outerHeight() + 100,
+        menuItems = topMenu.find("a"),
+        scrollItems = menuItems.map(function () {
+            var item = $($(this).attr("href"));
+            if (item.length) {
+                return item;
+            }
+        });
+        menuItems.click(function (e) {
+            var href = $(this).attr("href"),
+                offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+            $('html, body').stop().animate({
+                scrollTop: offsetTop
+            }, 300);
+            e.preventDefault();
+        });
+
+        // Bind to scroll
+        $(window).scroll(function () {
+            var fromTop = $(this).scrollTop() + topMenuHeight;
+            var cur = scrollItems.map(function () {
+                if ($(this).offset().top < fromTop) return this;
+            });
+            cur = cur[cur.length - 1];
+            var id = cur && cur.length ? cur[0].id :
+                "";
+            if (lastId !== id) {
+                lastId = id;
+                menuItems.parent().removeClass("active")
+                    .end().filter("[href='#" + id + "' ]").parent().addClass("active");
+            }
+        });
+    }  
 
 
     $(function () {
         AOS.init({ disable: 'mobile' });
         backToTop();
         onCLick();
+        onlyscroll();
     });
 })(jQuery);

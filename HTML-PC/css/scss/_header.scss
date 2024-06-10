@@ -289,7 +289,6 @@
         @media (max-width: 991px) {
             position: fixed;
             top: 81px;
-            bottom: 0;
             right: -100%;
             width: 300px !important;
             background-color: #030B15 !important;
@@ -382,7 +381,9 @@
                             display: none
                         }
                     }
-
+                    &:last-child{
+                        border-bottom: 0;
+                    }
                     &.active {
                         &::before{display: none;}
                         &>a {
@@ -420,6 +421,7 @@
             }
             &.open {
                 right: 0;
+                box-shadow: 0px 0px 5px 0px #ccc
             }
         }
     }

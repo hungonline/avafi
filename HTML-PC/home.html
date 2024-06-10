@@ -36,16 +36,16 @@
                             <div class="main-menu">
                                 <ul class="nav">
                                     <li class="active">
-                                        <a href="home.html">Home</a>
+                                        <a href="#section_1">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">About us</a>
+                                        <a href="#section_2">About us</a>
                                     </li>
                                     <li>
-                                        <a href="#">Investment</a>
+                                        <a href="#section_3">Investment</a>
                                     </li>
                                     <li>
-                                        <a href="#">Roadmap</a>
+                                        <a href="#section_4">Roadmap</a>
                                     </li>
                                 </ul>
                             </div>
@@ -56,7 +56,7 @@
             </div>
         </section>
         
-<section class="top-banner clearfix">
+<section id="section_1" class="top-banner clearfix">
     <div class="container">
         <div class="wrap">
             <span class="line-animate line-hoz line-green line-hoz-top1 hidden-mobile"></span>
@@ -78,37 +78,35 @@
         </div>
     </div>
 </section>
-<section class="our-service relative clearfix">
+
+<section id="section_2" class="why-avafi relative clearfix">
     <div class="container">
-        <h2 class="title-cate center aos-init aos-animate" data-aos="fade-up">our services</h2>
-        <div class="grid grid__3 aos-init aos-animate" data-aos="fade-up">
-            <div class="itemt">
-                <div class="icon"><img src="images/graphics/automated.png" alt=""></div>
-                <h3 class="name">Advisory</h3>
-                <div class="des">
-                    AVAFI offers AI-based investment advisory services with personalized investment recommendations tailored to the risk profile and financial goals of each individual.
+        <div class="our-service relative">
+            <h2 class="title-cate center aos-init aos-animate" data-aos="fade-up">our services</h2>
+            <div class="grid grid__3 aos-init aos-animate" data-aos="fade-up">
+                <div class="itemt">
+                    <div class="icon"><img src="images/graphics/automated.png" alt=""></div>
+                    <h3 class="name">Advisory</h3>
+                    <div class="des">
+                        AVAFI offers AI-based investment advisory services with personalized investment recommendations tailored to the risk profile and financial goals of each individual.
+                    </div>
                 </div>
-            </div>
-            <div class="itemt">
-                <div class="icon"><img src="images/graphics/invesment.png" alt=""></div>
-                <h3 class="name">Value</h3>
-                <div class="des">
-                    Automated asset management tools help monitor and optimize portfolios, ensuring safe and effective asset value growth.
+                <div class="itemt">
+                    <div class="icon"><img src="images/graphics/invesment.png" alt=""></div>
+                    <h3 class="name">Value</h3>
+                    <div class="des">
+                        Automated asset management tools help monitor and optimize portfolios, ensuring safe and effective asset value growth.
+                    </div>
                 </div>
-            </div>
-            <div class="itemt">
-                <div class="icon"><img src="images/graphics/analysis.png" alt=""></div>
-                <h3 class="name">Acceleration</h3>
-                <div class="des">
-                    Utilizing AVAX tokens to provide liquidity and support fast, efficient transactions, optimizing investment returns.
+                <div class="itemt">
+                    <div class="icon"><img src="images/graphics/analysis.png" alt=""></div>
+                    <h3 class="name">Acceleration</h3>
+                    <div class="des">
+                        Utilizing AVAX tokens to provide liquidity and support fast, efficient transactions, optimizing investment returns.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="why-avafi relative clearfix">
-    <div class="container">
         <div class="row align-center">
             <div class="img col-md-5 mb-4 mb-md-0 aos-init aos-animate" data-aos="fade-right"><img src="images/graphics/our-backer.png" alt=""></div>
             <div class="content col-md-7 aos-init aos-animate" data-aos="fade-left">
@@ -136,7 +134,7 @@
     </div>
 </section>
 
-<section class="investment-deals relative clearfix">
+<section id="section_3" class="investment-deals relative clearfix">
     <div class="container">
         <div class="row">
             <div class="head col-md-6 aos-init aos-animate" data-aos="fade-right">
@@ -167,7 +165,7 @@
     </div>
 </section>
 
-<section class="section-roadmap relative clearfix">
+<section id="section_4" class="section-roadmap relative clearfix">
     <div class="container">
         <div class="center min-container mb40 aos-init aos-animate" data-aos="fade-up">
             <h2 class="title-cate mb15">roadmap</h2>
@@ -306,24 +304,26 @@
     <!-- build:script -->
     
 <script>
-        // Chặn phím F12 và các phím tắt khác
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'F12' || (event.ctrlKey && (event.key === 'u' || event.key === 's' || event.key === 'a' || event.key === 'f'))) {
-                event.preventDefault();
-            }
-        });
+        // // Chặn phím F12 và các phím tắt khác
+        // document.addEventListener('keydown', function(event) {
+        //     if (event.key === 'F12' || (event.ctrlKey && (event.key === 'u' || event.key === 's' || event.key === 'a' || event.key === 'f'))) {
+        //         event.preventDefault();
+        //     }
+        // });
 
-        // Chặn chuột phải
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-        });
+        // // Chặn chuột phải
+        // document.addEventListener('contextmenu', function(event) {
+        //     event.preventDefault();
+        // });
 
-        // Chặn phím tắt chuột phải
-        document.addEventListener('mousedown', function(event) {
-            if (event.button === 2) {
-                event.preventDefault();
-            }
-        });
+        // // Chặn phím tắt chuột phải
+        // document.addEventListener('mousedown', function(event) {
+        //     if (event.button === 2) {
+        //         event.preventDefault();
+        //     }
+        // });
+    
+
 </script>
 
 
