@@ -50,8 +50,17 @@
             border-radius: 50%;
             color: rgba(234, 109, 35, 1);
             font-size: 22px;
+            -webkit-transition: 0.2s all;
+            transition: 0.2s all;
             svg{
                 width: 20px;height: 20px;
+                fill: rgba(234, 109, 35, 1);;
+            }
+            &:hover{
+                background: #00C4F4;
+                svg{
+                    fill:#fff
+                }
             }
         }
     }
