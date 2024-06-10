@@ -166,14 +166,18 @@ input {
     width: 30px;
     height: 30px;
     background: #2f2f2f;
-    /* border: 1px solid rgba(255,255,255,0.3); */
-    line-height: 30px;
+    line-height: 35px;
     text-align: center;
     position: fixed;
     bottom: 40px;
     right: 20px;
     color: #fff;
     z-index: 9;
+    svg{
+        width: 16px;
+        height: 16px;
+        fill: #fff;
+    }
 }
 
 .col-2dot4,

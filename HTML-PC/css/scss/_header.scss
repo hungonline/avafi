@@ -51,7 +51,7 @@
             font-size: 0;
         }
         img{
-            height: 80px;
+            height: 93px;
         }
     }
 
@@ -127,7 +127,7 @@
         .nav {
             align-items: center;
             &>li {
-                margin-right: 40px;
+                margin-right: 50px;
                 display: flex;
                 align-items: center;
                 position: relative;
@@ -429,7 +429,7 @@
         }
         .logo {
             img{
-                height: 60px;
+                height: 75px;
             }
         }
     }
@@ -450,7 +450,7 @@
     @media (max-width: 767px) {
         .logo{
             img{
-                height: 50px;
+                height: 65px;
             }
         }
         .btn-default{

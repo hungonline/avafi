@@ -50,12 +50,15 @@
             border-radius: 50%;
             color: rgba(234, 109, 35, 1);
             font-size: 22px;
+            svg{
+                width: 20px;height: 20px;
+            }
         }
     }
     @media (max-width: 1280px) {
         .logo{
             img{
-                height: 60px;
+                height: 75px;
             }
         }
     }
