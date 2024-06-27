@@ -383,15 +383,20 @@ input {
     justify-content: center;
     color: #fff;
     line-height: 1;
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 4px;
     padding: 0 30px;
-    height: 50px;
-    background: linear-gradient(93deg, #FF9898 .48%, #8054FF 100%);
+    height: 60px;
+    background: #EA6D23;
     transition: 0.2s all;
-    border: 0;
+    border: 1px solid #EA6D23;
     cursor: pointer;
+    &:hover {
+        color: #fff;
+        background: #00C4F4;
+        border: 1px solid #00C4F4;
+    }
 
     &.full {
         width: 100%;
@@ -429,6 +434,10 @@ input {
     }
     &.txt_black {
         color: #1C1C28
+    }
+    @media (max-width: 1280px) {
+        height: 50px;
+        font-size: 16px;
     }
 }
 
