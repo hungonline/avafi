@@ -5,13 +5,9 @@
     left: 0;
     right: 0;
     z-index: 9;
-    background: #030B15;
     transition: all .2s ease-in-out;
-    border-bottom: 1px solid rgba(103, 103, 103, .5);
     &.sticky {
-        .main-menu{
-            top: 52px;
-        }
+        background: rgba(19, 25, 37, 1);
     }
     &.bg-agray{
         background: #fff;
@@ -51,7 +47,7 @@
             font-size: 0;
         }
         img{
-            height: 93px;
+            height: 52px;
         }
     }
 
@@ -60,7 +56,7 @@
         height: 20px;
         position: absolute;
         right: 15px;
-        top: 32px;
+        top: 30px;
         transform: rotate(0);
         transition: .5s ease-in-out;
         cursor: pointer;
@@ -121,7 +117,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 140px;
+        gap: 70px;
     }
     .main-menu {
         .nav {
@@ -132,12 +128,12 @@
                 align-items: center;
                 position: relative;
                 &>a {
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 400;
                     display: flex;
                     align-items: center;
                     position: relative;
-                    color: rgba(255, 255, 255, 1);
+                    color: #9E9E9E;
                 }
                 .sub_menu {
                     font-size: 0;
@@ -154,7 +150,7 @@
                 }
 
                 &.active {
-                    &>a{color: #00C4F4;}
+                    &>a{color: #FF9898 ;}
                 }
                 &.default{
                     position: relative;
@@ -429,11 +425,6 @@
         .flex_row{
             height: 80px;
         }
-        .logo {
-            img{
-                height: 75px;
-            }
-        }
     }
     @media (max-width: 1025px) {
         .flex_right{gap: 50px;}
@@ -450,11 +441,6 @@
         }
     }
     @media (max-width: 767px) {
-        .logo{
-            img{
-                height: 65px;
-            }
-        }
         .btn-default{
             padding: 0 20px;
         }

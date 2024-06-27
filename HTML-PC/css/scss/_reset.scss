@@ -4,7 +4,6 @@
     box-sizing: border-box
 }
 
-
 body::-webkit-scrollbar {
     width: 6px;
     background-color: #fff;
@@ -66,7 +65,7 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: var(--colormain)
+        color: #fff
     }
 }
 p{
